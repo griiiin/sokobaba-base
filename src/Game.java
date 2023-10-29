@@ -11,7 +11,7 @@ public class Game implements Comparable<Entity>{
     public Game (int maxX, int maxY) {
         this.maxX = maxX-1;
         this.maxY = maxY-1;
-        turnUsed = false;
+        turnUsed = true;
         turns = 0;
         active = true;
     }
@@ -37,7 +37,6 @@ public class Game implements Comparable<Entity>{
     }
 
     boolean isActive () {
-        System.out.println("game.isActive: " + active);
         return active;
     }
     void incTurns (boolean a) {
