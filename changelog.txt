@@ -1,0 +1,16 @@
+> Programmer: grin6
+> Date Started: September/October 2023
+
+# Changelog
+---
+
+## 29-30 October 2023
+
+### Fixed
+
+ - unchanging loop variable
+
+### Changed
+
+ - console print outputs into exception throws
+
