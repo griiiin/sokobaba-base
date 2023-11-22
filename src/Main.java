@@ -15,7 +15,7 @@ public class Main {
             //System.out.println("game.isActive: " + game.isActive());
             game.printStage(entities);
             while (!game.isTurnUsed()) {
-                System.out.println("What do? move(u/d/l/r), exit(x): ");
+                System.out.println("What do? move(w/s/a/d), exit(x): ");
                 input = sc.nextLine();
                 try {
                     switch (input) {
