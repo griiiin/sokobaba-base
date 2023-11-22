@@ -1,5 +1,7 @@
+// Programmer : grin6
+//
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Game implements Comparable<Entity>{
     private int turns;
@@ -36,23 +38,23 @@ public class Game implements Comparable<Entity>{
         this.turnUsed = turnUsed;
     }
 
-    boolean isActive () {
+    public boolean isActive() {
         return active;
     }
-    void incTurns (boolean a) {
-        if (a) {
+    public void incrementTurns(boolean thing) {
+        if (thing) {
             turns++;
             turnUsed = true;
         }
     }
-    void quit () {
+    protected void quit () {
         System.out.println("Quitting game...");
         active = false;
     }
     /*void sortEntities (ArrayList<Entity> entityArrayList) {
         Collections.sort(entityArrayList, compareTo());
     }*/
-    void printStage (ArrayList<Entity> entityArrayList) {
+    protected void printStage (ArrayList<Entity> entityArrayList) {
         setTurnUsed(false);
         System.out.println("Turns: " + getTurns());
         for (int y = 0; y <= maxY; y++) {

@@ -1,5 +1,10 @@
-public class Combatant extends Entity {
-    private int hp;
+public abstract class Combatant extends Entity {
+    private double hp;
 
-    public int getHp() { return hp; }
+    public Combatant(int x, int y, double hp) {
+        super(x, y);
+        this.hp = hp;
+    }
+
+    public double getHp() { return hp; }
 }

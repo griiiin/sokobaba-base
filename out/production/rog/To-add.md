@@ -1,0 +1,4 @@
+- rooms
+- item entities
+- monster entities
+- player light radius and lesser fog-of-war
